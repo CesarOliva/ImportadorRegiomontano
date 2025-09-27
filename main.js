@@ -22,3 +22,22 @@ document.querySelectorAll('.card').forEach(card => {
         },4000);
     });
 });
+
+productos = document.getElementById('productos');
+contacto = document.getElementById('contacto');
+popup = document.querySelector('#popup');
+popup.style.display = 'none';
+
+if(window.innerWidth < 768){
+    document.onscroll = () => {
+        if(
+            (window.scrollY > productos.offsetTop- window.innerHeight + 100)
+            && (window.scrollY < contacto.offsetTop-innerHeight + 100)
+        ){
+            console.log("getBound: "+ window.scrollY),
+            popup.style.display = 'inline-block';
+        }else {
+            popup.style.display = 'none';
+        }
+    }
+}

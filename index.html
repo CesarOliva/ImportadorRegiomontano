@@ -80,9 +80,9 @@
             <h3 class="text-black text-center font-semibold mb-8 text-3xl md:text-4xl">Productos que manejamos</h3>
         </div>
         
-        <div class="w-[80%] md:w-[90%] justify-center flex flex-row flex-wrap gap-y-6 gap-x-6">
+        <div id="productos" class="w-[80%] md:w-[90%] justify-center flex flex-row flex-wrap gap-y-6 gap-x-6">
             <div class="card w-full sm:w-[45%] lg:w-[25%] valores bg-[#b0d5ef] rounded-xl p-6 md:p-4 flex flex-col items-center">
-                <div class="relative group w-[250px] h-[220px] mb-2 rounded-lg overflow-hidden">
+                <div class="relative group w-[100%] max-w-[300px] h-[220px] mb-2 rounded-lg overflow-hidden">
                     <img src="Imagenes/instrumentacion.webp" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Grupo Importador Regiomontano - Equipo de instrumentación">
                     <ul class="list absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg text-black bg-white/90 rounded-lg p-4 text-center">
                         <li>●Valvulas de control</li>
@@ -97,7 +97,7 @@
                 <p class="text-xl font-[500] text-white text-center">Equipos de Instrumentación</p>
             </div>
             <div class="card w-full sm:w-[45%] lg:w-[25%] valores bg-[#b0d5ef] rounded-xl p-6 md:p-4 flex flex-col items-center">
-                <div class="relative group w-[250px] h-[220px] mb-2 rounded-lg overflow-hidden">
+                <div class="relative group w-[100%] max-w-[300px] h-[220px] mb-2 rounded-lg overflow-hidden">
                     <img src="Imagenes/mecanico.jpeg" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Grupo Importador Regiomontano - Equipo mecánico">
                     <ul class="list absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg text-black bg-white/90 rounded-lg p-4 text-center">
                         <li>●Valvulas de alta presión</li>
@@ -110,7 +110,7 @@
                 <p class="text-xl font-[500] text-white text-center">Equipos Mecánico</p>
             </div>
             <div class="card w-full sm:w-[45%] lg:w-[25%] valores bg-[#b0d5ef] rounded-xl p-6 md:p-4 flex flex-col items-center">
-                <div class="relative group w-[250px] h-[220px] mb-2 rounded-lg overflow-hidden">
+                <div class="relative group w-[100%] max-w-[300px] h-[220px] mb-2 rounded-lg overflow-hidden">
                     <img src="Imagenes/motriz.avif" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Grupo Importador Regiomontano - Productos de tren motríz">
                     <ul class="list absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg text-black bg-white/90 rounded-lg p-4 text-center">
                         <li>●Convertidores de par</li>
@@ -123,7 +123,7 @@
                 <p class="text-xl font-[500] text-white text-center">Servicios a productos de tren motriz</p>
             </div>
             <div class="card w-full sm:w-[45%] lg:w-[25%] valores bg-[#b0d5ef] rounded-xl p-6 md:p-4 flex flex-col items-center">
-                <div class="relative group w-[250px] h-[220px] mb-2 rounded-lg overflow-hidden">
+                <div class="relative group w-[100%] max-w-[300px] h-[220px] mb-2 rounded-lg overflow-hidden">
                     <img src="Imagenes/electrico.png" class=" bg-white w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Grupo Importador Regiomontano - Equipo eléctrico">
                     <ul class="list absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg text-black bg-white/90 rounded-lg p-4 text-center">
                         <li>●Transformadores</li>
@@ -136,7 +136,7 @@
                 <p class="text-xl font-[500] text-white text-center">Equipo eléctrico</p>
             </div>       
             <div class="card w-full sm:w-[45%] lg:w-[25%] valores bg-[#b0d5ef] rounded-xl p-6 md:p-4 flex flex-col items-center">
-                <div class="relative group w-[250px] h-[220px] mb-2 rounded-lg overflow-hidden">
+                <div class="relative group w-[100%] max-w-[300px] h-[220px] mb-2 rounded-lg overflow-hidden">
                     <img src="Imagenes/incendio.webp" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" alt="Grupo Importador Regiomontano - Equipo contra incendios">
                     <ul class="list absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg text-black bg-white/90 rounded-lg p-4 text-center">
                         <li>●Mangueras</li>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section class="contacto w-full flex justify-center my-12 md:my-16">
+    <section id="contacto" class="contacto w-full flex justify-center my-12 md:my-16">
         <div class="formulario bg-white w-[90%] md:w-[70%] lg:w-[50%] rounded-3xl">
             <form action="https://formsubmit.co/" method="post" class="flex flex-col p-12 md:p-16">
                 <h2 class="text-center text-3xl mb-8">Contacto</h2>
@@ -236,6 +236,9 @@
         </a>
     </div>
 
+    <div id="popup" class="p-4 fixed bottom-8 left-6 rounded-xl inline-block absolute text-center bg-black text-white text-sm">
+        <p>Click en la imagen para ver mas</p>
+    </div>
 
     <script src="main.js"></script>
 </body>
