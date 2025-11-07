@@ -2,8 +2,38 @@
   font-family: "Poppins";
 }
 
+li.active a {
+  border-bottom: 2px solid #a14a4c;
+}
+
+.mobile-menu {
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.mobile-menu.open {
+    max-height: 300px;
+}
+
+.hamburger span {
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
 section.main {
-  background-image: url('Imagenes/background.avif');
+  background-image: url('Imagenes/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,10 +45,10 @@ section.main h1{
 }
 
 section.hero {
-  background-color: white;
+  background-color: #FEFBFF;
 }
 
-section.eleccion{
+section.productos{
   background-image: url('Imagenes/background.png');
 }
 
