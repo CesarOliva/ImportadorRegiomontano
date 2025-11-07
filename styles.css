@@ -62,6 +62,12 @@ section.productos{
   right: 20px;
 }
 
+.contact-bg {
+  background: linear-gradient(135deg, rgba(36, 34, 35, 0.9) 0%, rgba(59, 58, 58, 0.7) 100%), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
 #popup {
   box-shadow: -4px 10px 10px rgba(0, 0, 0, 0.3);
 }
