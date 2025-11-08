@@ -77,3 +77,42 @@ section.productos{
         background-position:initial;
     }
 }
+
+.categoria {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.categoria-header {
+  gap: 20px;
+}
+
+.categoria-header img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.categoria-info h2 {
+  color: #0077b6;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.categoria-info p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.lista-productos {
+  margin-top: 15px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 6px;
+}
+
+.lista-productos li {
+  list-style: disc;
+  color: #222;
+}
